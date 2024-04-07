@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode:'class',
+  darkMode: "class",
   theme: {
-    fontFamily:{
-      "dance":["dancing script", "cursive"],
-      "nunito":["Nunito", "sans-serif"]
+    fontFamily: {
+      dance: ["dancing script", "cursive"],
+      nunito: ["Nunito", "sans-serif"],
     },
     colors: {
       // page1
@@ -23,19 +23,19 @@ module.exports = {
       logoDarkColor: "#B1B1D8",
       logoLightColor: "#6fdcbf",
       // page2
-      primary2:"#ae8fdb",
-      darkPrimary2:"#4c3a69",
+      primary2: "#ae8fdb",
+      darkPrimary2: "#4c3a69",
       // page3
-      primary3:"#fef8b4",
-      darkPrimary3:"#2c2a32"
+      primary3: "#fef8b4",
+      darkPrimary3: "#2c2a32",
     },
     extend: {
       boxShadow: {
-        '3xl': '10px 10px 5px 0px rgba(0,0,0,1)',
-        'darkshadow':'10px 10px 5px 0px rgba(255,255,255,1)',
-        'reverselight':'-10px 10px 5px 0px rgba(0,0,0,0.75)',
-        'reversedark':'-10px 10px 5px 0px rgba(255,255,255,0.75)',
-      }
+        "3xl": "10px 10px 5px 0px rgba(0,0,0,1)",
+        darkshadow: "10px 10px 5px 0px rgba(255,255,255,1)",
+        reverselight: "-10px 10px 5px 0px rgba(0,0,0,0.75)",
+        reversedark: "-10px 10px 5px 0px rgba(255,255,255,0.75)",
+      },
     },
   },
   plugins: [],

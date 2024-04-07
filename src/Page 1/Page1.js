@@ -8,8 +8,13 @@ import frame from "./pics1/frame.jpg";
 import darkLamp from "./pics1/draklamp.png";
 import Typed from "typed.js";
 import React, { useEffect, useRef } from "react";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Page1 = ({ darkMode, toggleDarkMode }) => {
+  Aos.init({
+    duration: 2000,
+  });
+  Aos.refresh();
   const el = useRef();
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -49,7 +54,10 @@ const Page1 = ({ darkMode, toggleDarkMode }) => {
         id="left"
         className="hidden xl:flex relative w-1/3 h-screen mx-auto bg-secPrimary dark:bg-secDarkPrimary"
       >
-        <p className="font-dance text-6xl m-10 w-min font-extrabold cursor-pointer text-logoLightColor dark:text-logoDarkColor">
+        <p
+          data-aos="fade-down"
+          className="font-dance text-6xl m-10 w-min font-extrabold cursor-pointer text-logoLightColor dark:text-logoDarkColor"
+        >
           <a className="transition-none" href="index.html#main">
             mehdi
           </a>
@@ -63,18 +71,21 @@ const Page1 = ({ darkMode, toggleDarkMode }) => {
         )}
 
         <img
+          data-aos="fade-down"
           id="lampLogo"
           className="absolute top-0 left-72"
           src={lampLogo}
           alt="lamp logo"
         />
         <img
+          data-aos="fade-up-left"
           id="deskLogo"
           className="absolute left-28"
           src={deskLogo}
           alt="desk logo"
         />
         <img
+          data-aos="flip-right"
           id="frameLogo"
           className="rounded-full w-60 h-60 absolute left-14 top-60 border-8 border-primary dark:border-darkPrimary"
           src={frame}
@@ -87,26 +98,26 @@ const Page1 = ({ darkMode, toggleDarkMode }) => {
         className="bg-mobilePrimary dark:bg-secDarkPrimary w-full xl:w-2/3 h-screen p-5 md:bg-primary md:dark:bg-darkPrimary mx-auto"
       >
         <div className="w-auto h-14 flex justify-between md:justify-end items-center flex-row md:space-x-14 md:mt-8 md:mr-20">
-          <div className="hover:translate-x-3 hover:translate-y-3 hover:shadow-none shadow-3xl hidden md:flex justify-center cursor-pointer h-12 w-32 bg-lightNav dark:bg-darkNav">
-            <p className="text-center mt-1 text-4xl text-fontPrimary font-sans dark:text-mobilePrimary">
-              <a className="transition-none" href="index.html#about">
+          <div className="hover:translate-x-3 hover:translate-y-3 hover:shadow-none rounded-md shadow-3xl hidden md:flex justify-center cursor-pointer h-12 w-32 bg-lightNav dark:bg-darkNav">
+            <a className="transition-none" href="#about">
+              <p className="text-center mt-1 text-4xl text-fontPrimary font-sans dark:text-mobilePrimary">
                 About
-              </a>
-            </p>
+              </p>
+            </a>
           </div>
-          <div className="hover:translate-x-3 hover:translate-y-3 hover:shadow-none hidden md:flex justify-center shadow-3xl cursor-pointer h-12 w-32 bg-lightNav dark:bg-darkNav">
-            <p className="text-center mt-1 text-4xl text-fontPrimary font-sans dark:text-mobilePrimary">
-              <a className="transition-none" href="index.html#works">
+          <div className="hover:translate-x-3 hover:translate-y-3 hover:shadow-none rounded-md hidden md:flex justify-center shadow-3xl cursor-pointer h-12 w-32 bg-lightNav dark:bg-darkNav">
+            <a className="transition-none" href="#works">
+              <p className="text-center mt-1 text-4xl text-fontPrimary font-sans dark:text-mobilePrimary">
                 Works
-              </a>
-            </p>
+              </p>
+            </a>
           </div>
-          <div className="hover:translate-x-3 hover:translate-y-3 hover:shadow-none hidden md:flex justify-center shadow-3xl cursor-pointer h-12 w-32 bg-lightNav dark:bg-darkNav">
-            <p className="text-center mt-1 text-4xl text-fontPrimary font-sans dark:text-mobilePrimary">
-              <a className="transition-none" href="index.html#contact">
+          <div className="hover:translate-x-3 hover:translate-y-3 hover:shadow-none rounded-md hidden md:flex justify-center shadow-3xl cursor-pointer h-12 w-36 bg-lightNav dark:bg-darkNav">
+            <a className="transition-none" href="#contact">
+              <p className="text-center mt-1 text-4xl text-fontPrimary font-sans dark:text-mobilePrimary">
                 Contact
-              </a>
-            </p>
+              </p>
+            </a>
           </div>
           <div className=" md:hidden">
             <p className="font-dance text-6xl w-min font-extrabold cursor-pointer text-logoLightColor dark:text-logoDarkColor">
@@ -114,6 +125,7 @@ const Page1 = ({ darkMode, toggleDarkMode }) => {
             </p>
           </div>
           <div
+            data-aos="zoom-in"
             id="dark-mode"
             className="w-28 h-12 rounded-full mt-1 bg-lightModeToggle dark:bg-darkModeToggle"
           >
@@ -141,7 +153,7 @@ const Page1 = ({ darkMode, toggleDarkMode }) => {
             <img className="w-11 h-11 mr-2" src={waveLogo} alt="wave logo" />
             <span
               ref={hi}
-              className="lg:text-center md:font-extrabold text-4xl md:text-5xl text-fontPrimary dark:text-fontDarkPrimary mb-6"
+              className="lg:text-center md:font-extrabold text-4xl md:text-5xl text-fontPrimary dark:text-fontDarkPrimary md:mb-6"
             >
               Hi I'm mehdi
             </span>
@@ -149,7 +161,7 @@ const Page1 = ({ darkMode, toggleDarkMode }) => {
 
           <div
             id="second-text"
-            className="leading-relaxed mx-auto pt-3 mr-1 xl:mr-9 h-auto w-auto xl:ml-48 md:pr-1"
+            className="leading-relaxed mx-auto pt-1 md:pt-3 mr-1 xl:mr-9 h-auto w-auto xl:ml-48 md:pr-1"
           >
             <span
               ref={el}
