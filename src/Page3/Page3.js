@@ -64,7 +64,7 @@ const Page3 = ({ darkMode }) => {
               </p>
             </div>
             <div
-              data-aos="zoom-in-left"
+              data-aos="zoom-in"
               className="w-72 md:w-96 lg:w-1/2 mx-auto z-10"
             >
               <a
@@ -91,7 +91,7 @@ const Page3 = ({ darkMode }) => {
           {/* second */}
 
           <div className="flex flex-col lg:flex-row-reverse mt-20 lg:px-32 lg:gap-14 relative">
-            <div data-aos="fade-down-left" className="w-auto mx-auto xl:w-1/2">
+            <div data-aos="fade-down" className="w-auto mx-auto xl:w-1/2">
               <a
                 href="https://pokemonscards.netlify.app/"
                 target="_blank"
@@ -217,7 +217,7 @@ const Page3 = ({ darkMode }) => {
 
           <div className="flex flex-col lg:flex-row-reverse mt-20 lg:px-32 lg:gap-14 relative">
             <div
-              data-aos="zoom-out"
+              data-aos="fade-down"
               className="w-auto lg:mx-auto xl:w-1/2 xl:mt-10"
             >
               <a

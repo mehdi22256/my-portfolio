@@ -27,7 +27,7 @@ const Page2 = ({ darkMode }) => {
         </div>
         <div className="flex flex-row-reverse justify-center items-center content-center flex-wrap space-14 gap-10 mt-24">
           <div
-            data-aos="fade-left"
+            data-aos="fade-down"
             className="w-80 md:w-96 2xl:w-1/3 h-auto pb-5 border-2 border-fontPrimary bg-fontDarkPrimary rounded-3xl dark:bg-darkPrimary2 dark:border-fontDarkPrimary 2xl:relative 2xl:bottom-64 2xl:right-40"
           >
             <div className="flex flex-row border-b-2 pb-2 border-fontPrimary dark:border-fontDarkPrimary">
@@ -48,7 +48,7 @@ const Page2 = ({ darkMode }) => {
             </div>
           </div>
           <div
-            data-aos="zoom-out-up"
+            data-aos="fade-down"
             className="w-80 md:w-96 h-auto border-2 border-fontPrimary bg-fontDarkPrimary rounded-3xl dark:bg-darkPrimary2 dark:border-fontDarkPrimary 2xl:relative 2xl:top-36 2xl:left-48"
           >
             <div className="flex flex-row border-b-2 pb-2 border-fontPrimary dark:border-fontDarkPrimary">
