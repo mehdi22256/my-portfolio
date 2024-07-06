@@ -21,7 +21,7 @@ const Page3 = ({ darkMode }) => {
       id="works"
       className={`${darkMode && "dark"} mx-auto font-nunito`}
     >
-      <div className="h-[3250px] md:h-[3100px] xl:h-[3100px] px-3 md:px-40 lg:px-3 pb-40 bg-primary3 text-fontPrimary dark:text-fontDarkPrimary dark:bg-darkPrimary3 ">
+      <div className="h-auto px-3 md:px-40 lg:px-3 pb-40 bg-primary3 text-fontPrimary dark:text-fontDarkPrimary dark:bg-darkPrimary3 ">
         <div className="text-center lg:text-right pt-16 lg:pt-32 lg:pr-72">
           <p className="font-extrabold text-6xl md:text-7xl text-fontPrimary dark:text-fontDarkPrimary">
             My Works.
@@ -85,7 +85,7 @@ const Page3 = ({ darkMode }) => {
                 />
               </div>
             </div>
-            <div className="absolute w-1/2 top-32 right-10 ">
+            <div className="absolute w-1/2 top-32 right-10">
               {darkMode && (
                 <img
                   className="invisible 2xl:visible "
